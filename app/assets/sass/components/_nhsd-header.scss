@@ -1,0 +1,23 @@
+.nhsuk-header {
+    background-color: $color_nhsuk-white;
+}
+
+.nhsuk-header__navigation {
+  max-width: 100%;
+}
+
+nav {
+  max-width: 100%;
+
+  .nhsuk-header__navigation-list {
+    display: block;
+
+    .nhsuk-header__navigation-item {
+      text-align: right;
+    }
+  }
+
+  .nhsuk-header__navigation-link:hover {
+      background-color: #005eb8;
+  }
+}
