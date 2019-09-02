@@ -14,6 +14,32 @@ body {
   background-color: $color_nhsuk-grey-5;
 }
 
+.nhsuk-width-container {
+  max-width: 100%;
+  margin: 0 32px;
+}
+
+.nhsuk-details {
+  summary {
+    color: $color_nhsuk-blue;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.nhsuk-table__cell {
+  width: 50%;
+  vertical-align: top;
+}
+
+td {
+  vertical-align: top;
+  width: 50%;
+}
+
 .log-in {
   background-color: $color_nhsuk-blue;
   top: 0;

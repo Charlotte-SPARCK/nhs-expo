@@ -12,6 +12,9 @@ footer {
       width: 100%;
 
       .nhsuk-footer__list-item {
+      display: block;
+      width: 100%;
+
         a {
           color: $color_nhsuk-white;
           text-decoration: none;

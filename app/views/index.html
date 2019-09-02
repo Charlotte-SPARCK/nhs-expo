@@ -15,6 +15,22 @@
   NHS Digital Buying Catalogue
 {% endblock %}
 
+{% block header %}
+  {{ nhsdHeader({
+      "showNav": "true",
+      "primaryLinks": [
+        {
+          "label" : ""
+        },
+        {
+          'url' : '/',
+          'label' : 'Support'
+        }
+      ]
+    })
+  }}
+{% endblock %}
+
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 {% endblock %}
@@ -22,34 +38,6 @@
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
-<header class="nhsuk-header" role="banner">
-  <div class="nhsuk-width-container-fluid nhsuk-header__container">
-    <div class="nhsuk-header__logo">
-      <a class="nhsuk-header__link" href="/" aria-label="NHS homepage">
-        <img src="/images/nhsd-logo.png" xlink:href="">
-      </a>
-    </div>
-
-    <div class="nhsuk-header__content">
-      <a class="" href="log-in" aria-label="NHS homepage">
-        Log in
-      </a>
-    </div>
-  </div>
-
-    <nav class="nhsuk-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
-      <ul class="nhsuk-header__navigation-list">
-        <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link" href="/">
-            Support
-            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </nav>
-</header>
 
 <div class="welcome-banner nhsuk-u-padding-top-7 nhsuk-u-padding-bottom-7">
   <div class="nhsuk-width-container-fluid {{ containerClasses }}">
