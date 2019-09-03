@@ -33,7 +33,20 @@
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
-
+  {{ breadcrumb({
+  items: [
+    {
+      href: "index",
+      text: "Home"
+    },
+    {
+      href: "https://public-browse.herokuapp.com/",
+      text: "Browse Solutions"
+    }
+  ],
+  href: "Preview marketing page",
+  text: "Preview marketing page"
+  }) }}
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
